@@ -1,19 +1,37 @@
-# 🚀 Flask User Management System with Authentication
+# 🚀 Student Management System (Flask CRUD + Authentication)
 
-This project is a **User Management System** built using **Flask** and **SQLite** as part of my internship (Task 2).
+This project is a **Student Management System** built using **Flask** and **SQLite** as part of my internship (Task 3).
 
-It includes user authentication and a dashboard to manage users, combining both backend and frontend concepts.
+It includes secure authentication and full CRUD functionality, along with a modern SaaS-style dashboard UI.
 
 ---
 
 ## ✨ Features
 
-- 🔐 User Registration & Login (with password hashing)
-- 🧠 Session-based Authentication
-- 🔒 Protected Dashboard (only logged-in users can access)
-- ➕ Add Users (Name & Email)
-- 📋 View Users in a table
-- 🎨 Clean and responsive UI
+🔐 Authentication
+- User Registration & Login
+- Password hashing using Werkzeug
+- Session-based access control
+
+📊 Dashboard
+- Personalized welcome page
+- Total students count
+- Quick navigation
+
+📋 Student Management (CRUD)
+- ➕ Add Students
+- 📄 View Students
+- ✏️ Edit Students
+- 🗑️ Delete Students
+
+---
+
+## 🔐 Security Features
+
+- Protected routes (only accessible after login)
+- Redirects unauthorized users to login page
+- Passwords are securely hashed (no plain text storage)
+- Session-based authentication maintained across pages
 
 ---
 
@@ -27,9 +45,7 @@ It includes user authentication and a dashboard to manage users, combining both 
 ---
 
 ## 📁 Project Structure
-
-
-python-fullstack-task2/
+python-fullstack-task3/
 │
 ├── app.py
 ├── database.db
@@ -37,22 +53,28 @@ python-fullstack-task2/
 ├── templates/
 │ ├── login.html
 │ ├── register.html
-│ └── dashboard.html
+│ ├── dashboard.html
+│ ├── students.html
+│ ├── add_student.html
+│ └── edit_student.html
 │
 ├── static/
 │ └── style.css
-
-
----
+│
+├── screenshots/
+│ ├── dashboard.png
+│ ├── students.png
+│ ├── login.png
+│ └── register.png
 
 ## ⚙️ Installation & Setup
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Tappyyokka/User-management-with-CRUD.git                    
 
 
-2. Navigate to the project folder:
+2. Navigate into the folder:
 
 cd your-repo-name
 
@@ -71,24 +93,42 @@ python app.py
 
 http://127.0.0.1:5000
 
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 📋 Students Page
+![Students](screenshots/students.png)
+
+### 🔐 Login Page
+![Login](screenshots/login.png)
+
+### 📝 Register Page
+![Register](screenshots/register.png)
+
 ---
 
 ## 📚 What I Learned
 
-- How authentication works (login/register)
-- Password hashing using Werkzeug
-- Managing sessions in Flask
-- Connecting Flask with SQLite database
-- Structuring a full-stack web application
+- Building a full CRUD system using Flask
+- Implementing authentication and session management
+- Working with SQLite database
+- Designing a clean and structured UI
+- Connecting backend logic with frontend templates
 
 ---
 
 ## 🚀 Future Improvements
 
-- ✏️ Edit & Delete users
-- 🔍 Search functionality
-- 📱 Responsive design improvements
-- 🎯 Flash messages for better UX
+- 🔍 Search & filter students
+- ⚠️ Delete confirmation popup
+- 📱 Mobile responsiveness
+- 🌙 Dark mode
+- 📊 Charts & analytics on dashboard
 
 ---
 
@@ -100,4 +140,4 @@ This project was built as part of my internship learning journey.
 
 ## 📬 Connect with me
 
-Feel free to connect or give feedback!
+Feel free to connect or share feedback!
