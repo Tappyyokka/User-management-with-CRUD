@@ -1,4 +1,4 @@
-/* Reset */
+/* ---------- RESET ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -7,170 +7,14 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f7fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f4f6f9;
+    color: #333;
 }
 
-/* Card container */
-.container {
-    background: #ffffff;
-    padding: 30px;
-    width: 340px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    text-align: center;
-}
-
-/* Heading */
-h2 {
-    margin-bottom: 20px;
-    color: #222;
-}
-
-/* Inputs */
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-input:focus {
-    border-color: #2563eb;
-    outline: none;
-}
-
-/* Button */
-button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #2563eb;
-    border: none;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-button:hover {
-    background-color: #1e4fd1;
-}
-
-/* Links */
-a {
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 14px;
-    color: #2563eb;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Dashboard */
-.dashboard {
-    width: 400px;
-}
-
-.logout-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 14px;
-    background-color: #ef4444;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
-.logout-btn:hover {
-    background-color: #dc2626;
-}
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-th {
-    background-color: #2563eb;
-    color: white;
-    padding: 10px;
-}
-
-td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-tr:hover {
-    background-color: #f1f5f9;
-}
-/* Layout wrapper */
-.dashboard-wrapper {
-    display: flex;
-    gap: 30px;
-    padding: 40px;
-}
-
-/* Left panel (form) */
-.left-panel {
-    width: 30%;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Right panel (table) */
-.right-panel {
-    width: 70%;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Form layout */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-th {
-    background-color: #2563eb;
-    color: white;
-    padding: 10px;
-}
-
-td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-tr:hover {
-    background-color: #f1f5f9;
-}
-/* Auth pages (login/register) */
+/* ---------- AUTH PAGES ---------- */
 .auth-container {
-    width: 350px;
-    margin: auto;
-    margin-top: 120px;
+    width: 360px;
+    margin: 100px auto;
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -192,6 +36,12 @@ tr:hover {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
+    font-size: 14px;
+}
+
+.auth-container input:focus {
+    border-color: #2563eb;
+    outline: none;
 }
 
 .auth-container button {
@@ -207,7 +57,455 @@ tr:hover {
     background-color: #1e4fd1;
 }
 
-.auth-link {
+.auth-container a {
     margin-top: 15px;
+    display: inline-block;
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- DASHBOARD ---------- */
+.dashboard {
+    width: 400px;
+    margin: 120px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.dashboard h2 {
+    margin-bottom: 20px;
+}
+
+.dashboard a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.dashboard a:hover {
+    background: #1e4fd1;
+}
+
+.logout-btn {
+    background: #ef4444 !important;
+}
+
+.logout-btn:hover {
+    background: #dc2626 !important;
+}
+
+/* ---------- STUDENTS PAGE ---------- */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+/* Add button */
+.container a {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container a:hover {
+    background: #1e4fd1;
+}
+
+/* ---------- TABLE ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #1e3a8a;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Action links */
+td a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- FORM (ADD + EDIT) ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+form button {
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1e4fd1;
+}
+
+/* ---------- SMALL UTIL ---------- */
+.center {
+    text-align: center;
+}
+/* Dashboard Layout Fix */
+.dashboard {
+    width: 400px;
+    margin: 120px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Buttons container */
+.dashboard-actions {
+    margin-top: 20px;
+}
+
+/* Buttons */
+.dashboard-actions a {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dashboard-actions a:hover {
+    background: #1e4fd1;
+}
+
+/* Logout special */
+.logout-btn {
+    background: #ef4444 !important;
+}
+
+.logout-btn:hover {
+    background: #dc2626 !important;
+}
+/* ---------- STUDENTS PAGE ---------- */
+
+.students-container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Header */
+.students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.students-header h2 {
+    font-size: 24px;
+}
+
+/* Add button */
+.add-btn {
+    background: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.add-btn:hover {
+    background: #1e4fd1;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+th {
+    background: #1e3a8a;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Buttons inside table */
+.edit-btn {
+    color: #2563eb;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.delete-btn {
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.edit-btn:hover {
+    text-decoration: underline;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
+/* Empty state */
+.empty {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/* Back link */
+.back-link {
+    margin-top: 20px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #2563eb;
+}
+/* ---------- APP LAYOUT ---------- */
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    width: 220px;
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    color: #cbd5f5;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #2563eb;
+    color: white;
+}
+
+.sidebar .logout {
+    margin-top: auto;
+    background: #ef4444;
+    color: white;
+}
+
+.sidebar .logout:hover {
+    background: #dc2626;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+    flex: 1;
+    background: #f1f5f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOPBAR */
+.topbar {
+    background: white;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* CONTENT */
+.content {
+    padding: 25px;
+}
+
+/* HEADER */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* ADD BUTTON */
+.add-btn {
+    background: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.add-btn:hover {
+    background: #1e4fd1;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #1e3a8a;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f9fafb;
+}
+
+/* ACTIONS */
+.edit-btn {
+    color: #2563eb;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.delete-btn {
+    color: #ef4444;
+    text-decoration: none;
+}
+
+/* EMPTY */
+.empty {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+/* DASHBOARD CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* QUICK ACTIONS */
+.quick-actions {
+    margin-top: 20px;
+}
+
+.quick-actions a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.quick-actions a:hover {
+    background: #1e4fd1;
+}
+.error-msg {
+    color: #ef4444;
+    margin-bottom: 10px;
     font-size: 14px;
 }
